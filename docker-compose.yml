@@ -1,0 +1,16 @@
+services:
+
+  app:
+    image: poojanerkar/docker-watchtower:latest
+    container_name: docker-watchtower
+    restart: always
+    ports:
+      - "3000:3000"
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 30
