@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
   res.end(`
     <html>
       <body style="font-family:sans-serif;text-align:center;padding:50px">
-        <h1>Watchtower Auto-Deploy Demo</h1>
+        <h1>Watchtower Auto-Deploy Project</h1>
         <h2 style="color:green">Version: ${VERSION}</h2>
         <p>Deployed at: ${new Date().toISOString()}</p>
       </body>
