@@ -64,6 +64,8 @@ The pipeline has **one job**: build and push.
 The server has **one job**: stay updated.  
 They never need to talk to each other directly.
 
+![Docker Watchtower Architecture](screenshots/architecture.png)
+
 ---
 
 ## 🛠️ Tools Used
